@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <!--
+    android:paddingTop = "100dp"：这里的padding设置之后起的作用是使得listView中的内容的边距距离listView的距离，
+    所以设置PaddingTop之后，firstVisibleChild.getTop()方法得到的是100px-->
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        ptr:ptrListViewExtrasEnabled = "true"
+        android:background="@color/colorAccent"
+        android:layout_marginTop="10dp"
+        android:paddingTop = "100px"
+        android:id="@+id/list_view"
+        android:layout_width = "match_parent"
+        android:layout_height = "match_parent">
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+</android.support.constraint.ConstraintLayout>
